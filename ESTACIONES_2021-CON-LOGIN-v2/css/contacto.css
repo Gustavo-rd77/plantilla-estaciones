@@ -1,0 +1,238 @@
+@font-face{
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+    
+}
+@font-face{
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+}
+
+
+/* *****************cabecera****************************** */
+.head{
+    width: 100%;
+    /* height: 90px; */
+    /* overflow: hidden; */
+    background-color:rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 99;
+    transition: all 0.4s;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+}
+.logo-menu{
+    width: 150px;
+    height: 70px;
+    margin:0px auto;
+}
+.logo-menu img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.container-menu ul li:nth-child(3){
+    background-color: #017338;
+    box-shadow: 0px 4px 6px;
+}
+.container-menu ul li:nth-child(3) a{
+    color: #fff !important;
+} 
+.container-menu ul li{
+    padding: 14px 28px;
+}
+.link{
+    text-decoration: none;
+    /* color: #E0E0E0; */
+    color: #000;
+    padding: 0px 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+}
+.link:hover{
+    color: #017338;
+}
+.sticky{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    box-shadow: 0px 2px 6px #212121;
+    transition: all 0.4s;
+}
+/* *****************fin cabecera*************************** */
+body{
+    background-color: #f8f9fa;
+}
+.wrap{
+    width: 90%;
+    margin: 0px auto;
+}
+/* ****************Contacto****************************** */
+.container_contac{
+    margin-top: 50px;
+}
+.title_container{
+    font-size: 34px;
+    text-align: center;
+    color: #212121;
+}
+.contact{
+    width: 260px;
+    height: 100px;
+    text-align: center;
+}
+.contact h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contact p{
+    font-size: 15px;
+    color: #999;
+}
+.contact_flex{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.container_form{
+    margin-top: 25px;
+}
+.container_form h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.form_contac{
+    display: grid;
+    grid-template-rows: auto auto 40px;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-top: 50px;
+}
+
+.form_data{
+    display: flex;
+    flex-direction: column;
+    /* gap:10px; */
+}
+.form_data label{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.form_data input{
+    padding:6px 8px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    background-color: transparent;
+}
+.form_data input:focus{
+    outline:none;
+    border-bottom: 3px solid #017338;
+}
+.form_textarea{
+    grid-column: 1/3;
+}
+.form_textarea textarea{
+    max-height: 100px;
+    padding:15px 8px;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid #999;
+    background-color: transparent;
+}
+.form_textarea textarea:focus{
+    outline: none;
+    border-bottom: 3px solid #017338;
+}
+.form_contac input[type=submit]{
+    outline: none;
+    width: 200px;
+    background-color: #017338;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor:pointer;
+    opacity: .5;
+    border-radius: 22px
+}
+.form_contac input[type=checkbox]:checked{
+   outline: none;
+   
+}
+.privacy{
+    text-align: justify;
+    font-size: 13px;
+    padding-top: 20px;
+}
+.error_general{
+    color: red;
+    font-size: 16px;
+}
+.error{
+    color:red;
+
+}
+.ok{
+    background: #a4c639;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.container_map{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    
+}
+.container_map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ****************Fin de contacto********************** */
+
+/* *******************FOOTER**************************** */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 25px 0px;
+    margin-top: 50px;
+}
+.footer_copy{
+    text-align: center;
+    font-size: 14px;
+}
+.icon-footer{
+    display: block;
+}
+.contaner-redes{
+    display: flex;
+    justify-content: center;
+}
+.contaner-redes a{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
